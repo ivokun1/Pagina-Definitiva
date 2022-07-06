@@ -1,62 +1,86 @@
-.navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.1);
+.container { /*Todo el contenido está guardado en la clase container, por lo cual se le puede definir la cantidad de página que va a abarcar*/
+    width: 90%; /* Tamaño*/
+    margin: auto; /*Centrar en la pantalla ese 90%*/
+}
+.nav-main {
+    font-size: 17px; /*Tamaño*/
+    display: flex; /*Organizar los elementos*/
+    justify-content: space-between; /*Van a utilizar todo el ancho disponible*/
+    align-items: center; /*Alinear barra de navegacion al centro*/
+    height: 60px; /*Definir altura*/
+    padding: 20px 0; /*Espacio entre contenido y borde */
+    margin-bottom: 15px; /*Espacio hacie abajo para separar de la portada*/
 }
 
-.top-row {
-    height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+.nav-brand { /*Clase del icon*/
+    width: 50px; /*Ancho del icon*/
 }
 
-.navbar-brand {
-    font-size: 1.1rem;
+.nav-main .Buscar {
+    width: 200px;
+    padding: 0px 5px;
+    position: relative;
 }
 
-.oi {
-    width: 2rem;
-    font-size: 1.1rem;
-    vertical-align: text-top;
-    top: -2px;
-}
-
-.nav-item {
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
-}
-
-    .nav-item:first-of-type {
-        padding-top: 1rem;
+    .nav-main .Buscar form {
+        position: relative;
     }
 
-    .nav-item:last-of-type {
-        padding-bottom: 1rem;
-    }
+        .nav-main .Buscar form input {
+            background: #262a2e;
+            border-radius: 20px;
+            border: 0;
+            margin-bottom: 0;
+            height: 25px;
+            display: block;
+            padding: 5px 15px;
+            width: 100%;
+        }
 
-    .nav-item ::deep a {
-        color: #d7d7d7;
-        border-radius: 4px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-    }
-
-.nav-item ::deep a.active {
-    background-color: rgba(255,255,255,0.25);
-    color: white;
+        .nav-main .Buscar form button {
+            background: transparent;
+            position: absolute;
+            width: 0px;
+            height: 25px;
+            padding: 0;
+            width: 0;
+            top: 0;
+            margin-bottom: 0;
+            border: 0;
+            color: white;
+            box-shadow: none;
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 5px;
+            font-weight: 700;
+            outline: none;
+            left: 200px;
+        }
+/* Navegación izquierda*/
+.nav-main ul {
+    display: flex;
 }
 
-.nav-item ::deep a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
-}
-
-@media (min-width: 641px) {
-    .navbar-toggler {
-        display: none;
+    .nav-main ul li { /*Dentro de la clase "main", dentro de la lista "ul", a cada elemento "li"(Contenido de la barra de navegación)*/
+        padding: 7px; /*Separación entre cada li de la barra*/
     }
 
-    .collapse {
-        /* Never collapse the sidebar for wide screens */
-        display: block;
+        .nav-main ul li a:hover { /*Se usa para seleccionar elementos cuando pasa el mouse sobre ellos, en este caso, el contenido de la barra de navegación*/
+            border-bottom: 1px solid #ffffff; /*Al boton se le aplica una barra debajo de modo estético, y se le define el grosor, opacidad y color*/
+        }
+
+    .nav-main ul.nav-menu { /*Toda la clase menu*/
+        flex: 1; /*Mueve el contenido hacia el margen*/
+        margin-left: 20px; /*Esapciado hacie la izquierda*/
     }
+
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    /* display: none;*/
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none;
 }
