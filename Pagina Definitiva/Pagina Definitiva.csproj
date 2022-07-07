@@ -8,6 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\css\img\4598-anime-4k.png" />
+    <None Include="wwwroot\css\img\67343-anime-4k.jpg" />
+    <None Include="wwwroot\css\img\67622-anime-4k.jpg" />
+    <None Include="wwwroot\css\img\Esfera_del_dragon_4_estrellas.webp" />
+    <None Include="wwwroot\css\img\POCHITA ANASHEI PNG.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.6" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.6" />

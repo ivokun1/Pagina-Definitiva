@@ -12,7 +12,7 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.2'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     /*Código generado Hero Pattern https://www.heropatterns.com*/
     font-size: 19px; /*Tamaño de letra*/
-    font-family: 'Oswald', sans-serif; /*Fuente de letra*/
+    font-family: 'Oswald' ; /*Fuente de letra*/
 }
 
 a { /*Para todos los links*/
@@ -23,3 +23,278 @@ a { /*Para todos los links*/
 ul {
     list-style: none;
 }
+
+/*Portada inicial*/
+.PortadaInicial {
+    width: 100%;
+    height: 550px;
+    background: url('img/67343-anime-4k.jpg') no-repeat center center /cover; /*No repetir imagen,centrar y que abarque todo*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    padding: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.buttonsesion { /*Botón de comenzar*/
+    cursor: pointer; /*Mostrar el puntero sobre el*/
+    display: inline-block; /*Colocar contenido dentro*/
+    border: 0;
+    font-weight: bold;
+    padding: 10px 15px;
+    ;
+    background: #262626;
+    color: rgb(37, 120, 214);
+    font-size: 20px;
+    margin: 40px 0;
+}
+
+    .buttonsesion:hover {
+        opacity: .7;
+    }
+
+.NombreNoticias h1 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.PortadaInicial h2,
+.PortadaInicial p {
+    margin-bottom: 10px;
+}
+/*Nuevo panel*/
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px; /*Espacio entre cada columna*/
+    margin: 50px 0px;
+}
+
+    .news-cards img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .news-cards h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .news-cards a {
+        padding: 10px 0;
+        color: rgb(37, 120, 214);
+        text-transform: uppercase; /*Para que esten en mayúscula*/
+        display: inline-block;
+        font-weight: bold;
+    }
+
+        .news-cards a:hover {
+            text-decoration: underline; /*Agrega una linea debajo del botón de manera estética*/
+        }
+/*Portada secundaria 1*/
+.ImagenCartasPortada {
+    width: 100%;
+    height: 400px;
+    background: url("img/67622-anime-4k.jpg")no-repeat center center/cover;
+    margin-bottom: 10px;
+}
+
+    .ImagenCartasPortada .content {
+        width: 40%;
+        padding: 90px 0 0 30px;
+        color: #fff;
+    }
+
+.button-card {
+    cursor: pointer; /*Mostrar el puntero sobre el*/
+    display: inline-block; /*Colocar contenido dentro*/
+    border: 0;
+    font-weight: bold;
+    padding: 5px 7px;
+    ;
+    background: #262626;
+    color: rgb(37, 120, 214);
+    font-size: 20px;
+}
+
+.Recomendacion {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px; /*Espacio entre cada columna*/
+    margin: 50px 0px;
+}
+
+    .Recomendacion img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .Recomendacion h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .Recomendacion a {
+        padding: 10px 0;
+        color: rgb(37, 120, 214);
+        text-transform: uppercase; /*Para que esten en mayúscula*/
+        display: inline-block;
+        font-weight: bold;
+    }
+
+        .Recomendacion a:hover {
+            text-decoration: underline; /*Agrega una linea debajo del botón de manera estética*/
+        }
+
+.NombreRecomendacion h1 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+/*/*Portadas secundarias*/
+.ImagenCartasPortada2 {
+    width: 100%;
+    height: 350px;
+    background: url(img/4598-anime-4k.png)no-repeat center center/cover;
+}
+
+    .ImagenCartasPortada2 .content {
+        width: 50%;
+        padding: 100px 0 0 30px;
+        color: #fff;
+    }
+/* Mobil */
+@media (max-width: 700px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-main ul.nav-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        transform: translateX(-900px);
+        transition: transform .5s ease-in-out;
+    }
+
+        .nav-main ul.nav-menu.show {
+            transform: translateX(-20px);
+        }
+
+        .nav-main ul.nav-menu li {
+            padding: 20px;
+            font-size: 14px;
+        }
+
+    .nav-main ul.nav-menu-rigth {
+        margin-right: 40px;
+    }
+
+    .news-cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .ImagenCartasPortada .content {
+        width: 80%;
+    }
+
+    .ImagenCartasPortada2 .content {
+        width: 80%;
+    }
+
+    .pie-de-links .contenido-de-pie {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .news-cards {
+        grid-template-columns: 1fr;
+    }
+
+        .news-cards img {
+            height: 270px;
+        }
+
+    .ImagenCartasPortada .content {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .ImagenCartasPortada2 .content {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .pie-de-links .contenido-de-pie {
+        grid-template-columns: 1fr;
+    }
+}
+
+.news-Anime {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px; /*Espacio entre cada columna*/
+    margin: 50px 0px;
+}
+
+    .news-Anime img {
+        cursor: pointer;
+        width: 100%;
+        height: 180px;
+        transition: 0.2s;
+        transform: scale(1);
+    }
+
+    .news-Anime h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .news-Anime a {
+        padding: 10px 0;
+        color: rgb(37, 120, 214);
+        text-transform: uppercase; /*Para que esten en mayúscula*/
+        display: inline-block;
+        font-weight: bold;
+    }
+
+        .news-Anime a:hover {
+            text-decoration: underline; /*Agrega una linea debajo del botón de manera estética*/
+        }
+
+.news-Reseña {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 25px; /*Espacio entre cada columna*/
+    margin: 50px 0px;
+}
+
+    .news-Reseña img {
+        width: 23%;
+        height: 180px;
+    }
+
+    .news-Reseña h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .news-Reseña a {
+        padding: 10px 0;
+        color: rgb(37, 120, 214);
+        text-transform: uppercase; /*Para que esten en mayúscula*/
+        display: inline-block;
+        font-weight: bold;
+    }
+
+        .news-Reseña a:hover {
+            text-decoration: underline; /*Agrega una linea debajo del botón de manera estética*/
+        }

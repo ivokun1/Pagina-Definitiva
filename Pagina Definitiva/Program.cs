@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Pagina_Definitiva.Data;
-//using Pagina_Definitiva.Data;
+using Pagina_Definitiva.Pages;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("Pagina_DefinitivaContextConnection") ?? throw new InvalidOperationException("Connection string 'Pagina_DefinitivaContextConnection' not found.");

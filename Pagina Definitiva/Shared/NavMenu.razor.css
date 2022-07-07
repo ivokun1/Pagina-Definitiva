@@ -7,7 +7,7 @@
     display: flex; /*Organizar los elementos*/
     justify-content: space-between; /*Van a utilizar todo el ancho disponible*/
     align-items: center; /*Alinear barra de navegacion al centro*/
-    height: 60px; /*Definir altura*/
+    height: 100px; /*Definir altura*/
     padding: 20px 0; /*Espacio entre contenido y borde */
     margin-bottom: 15px; /*Espacio hacie abajo para separar de la portada*/
 }
